@@ -171,4 +171,8 @@ class ProductoController extends Controller
         }
     }
 
+    public function nonstock()
+    {
+       return $data = Producto::where('stock','=',0)->get();
+    }
 }

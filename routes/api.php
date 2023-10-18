@@ -39,6 +39,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
     Route::get('/cantidadResultados',[ProductoController::class, 'cantidadResultados']);
     Route::get('/venderArticulo/{producto}',[ProductoController::class, 'venderArticulo']);
+    Route::get('/nonstock',[ProductoController::class, 'nonstock']);
+
 });
 
 
